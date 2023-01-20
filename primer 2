@@ -1,0 +1,16 @@
+use probnik
+
+select * from students
+-- s pomowyu (UPDATE) mi mojem pomenyat znaceniye ili je obnovlat
+UPDATE students
+SET Age = Age + 1
+
+select * from students
+
+
+--s pomowyu CONT(*) vicislayem skolko yest strok v tablice
+SELECT COUNT(*) From students
+
+
+
+

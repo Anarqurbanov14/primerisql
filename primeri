@@ -1,0 +1,66 @@
+--vibirayem qde budet proxodit nawa operaciya
+USE probnik;
+
+--vibirayet i pokazivayet vse cto yest v tablice
+select * from dbo.students
+
+
+
+ALTER table dbo.students
+DROP COLUMN FavColor
+
+--sozdayem stroku s znaceniyami
+INSERT students VALUES(18,45,'Djim','Kerry','red');
+
+--vibirayem danniye s pomowyu(select) iz tablici s pomowyu (from)
+select Id,Age from students
+
+SELECT DISTINCT Age FROM students
+
+--sortirovka s pomowyu (order by) po vozrastaniyu
+select *
+ from students
+ORDER BY Age
+
+--a zdes naoborot po ubivaniyu s pomowyu (DESC) ili je (ASC)
+select *
+ from students
+ORDER BY Age DESC
+
+--s pomowyu (TOP) pozvolayet vibrat 3 strok s stolbca FirstName
+ SELECT TOP 3 FirstName from students
+
+--pozvolayet vibrat 75 procentov iz tablici spomowyu (precent)
+ SELECT Top 75 PERCENT FirstName from students
+
+--s pomowyu (ALTER) mi izmenayem Table ,tocneye udalayim colonnu (COLOMN ) s DROP 
+alter table dbo.students 
+DROP COLUMN mail
+
+
+
+select * from students
+--s pomowyu(WHERE) mi iwem danniy iz stolba Age s znaceniyem '24'
+WHERE Age = '24'
+
+-- a tak je s pomowyu s znakomi sravneniyami proverit i nayti
+select * from students
+Where Age > 40
+
+--s pomowyu AND mojno raswirit poisk dati 
+select * from students 
+where FirstName = 'Anar' AND Age > 20;
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
